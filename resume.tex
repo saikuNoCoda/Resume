@@ -1,0 +1,317 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.8cm, top=.8cm, right=1.8cm, bottom=0.8cm, footskip=.2cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\makeatletter
+\patchcmd{\@sectioncolor}{\color}{\mdseries\color}{}{}
+\makeatother
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+% \photo[rectangle,edge,right]{profile}
+\name{}{Divyansh Verma}
+\position{National Institute of Technology Karnataka{\enskip\cdotp\enskip}Computer Engineering Undergraduate}
+\address{ C204 Mega Tower 2, National National Institute of Technology Karnataka, Mangalore, Karnataka, India}
+
+\mobile{(+91) 8950882215}
+\email{divyanshverma12@gmail.com}
+\homepage{www.divyanshverm.me}
+\github{failedcoder12}
+\linkedin{divyanshvermafc}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \extrainfo{extra informations}
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[C]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Divyansh Verma~~~·~~~Resume}
+  {\thepage}
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Education}
+
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cventries}
+
+%---------------------------------------------------------
+  \cventry
+    {B.Tech. in Computer Engineering} % Degree
+    {National Institute of Technology, Karnataka} % Institution
+    {Karnataka, India} % Location
+    {Aug. 2016 - Present} % Date(s)
+    {CGPA : 8.876/10}
+
+%---------------------------------------------------------
+\end{cventries}
+\begin{cventries}
+
+%---------------------------------------------------------
+  \cventry
+    {Senior Secondary Examination - Class XII(CBSE)} % Degree
+    {S.A. Jain Senior Model School} % Institution
+    {Ambala, Haryana, India} % Location
+    {2015 - 2016} % Date(s)
+    {Percentage : 96.4}
+%---------------------------------------------------------
+\end{cventries}
+
+
+\begin{cventries}
+
+%---------------------------------------------------------
+  \cventry
+    {Higher Secondary Examination - Class X(CBSE)} % Degree
+    {S.A. Jain Senior Model School} % Institution
+    {Ambala, Haryana, India} % Location
+    {2015 - 2016} % Date(s)
+    {CGPA : 10.00/10.00}
+%---------------------------------------------------------
+\end{cventries}
+
+\cvsection{Projects}
+
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cventries}
+
+%---------------------------------------------------------
+  \cventry
+    {Web Designing, (HTML, Bootstrap, CSS)} % Degree
+    {NITK-NOTES} % Institution
+    {} % Location
+    {May 2017 - July 2017} % Date(s)
+    {
+      \begin{cvitems} % Description(s) bullet points
+        \item {A website designed to provide notes, books pdf and other helpful study material for 1st year engineering students.}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+\end{cventries}
+
+\begin{cventries}
+
+%---------------------------------------------------------
+  \cventry
+    {Course Project, Data Communication , (Python) } % Degree
+    {Hamming Codes} % Institution
+    {} % Location
+    {May 2017 - July 2017} % Date(s)
+    {
+      \begin{cvitems} % Description(s) bullet points
+        \item {Paper implementation of Hamming codes as error reducing codes.}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+\end{cventries}
+
+\begin{cventries}
+
+%---------------------------------------------------------
+  \cventry
+    {Course Project, Software Engineering , (Android, Java) } % Degree
+    {EDUHELP} % Institution
+    {} % Location
+    {Jan 2018 - April 2018} % Date(s)
+    {
+      \begin{cvitems} % Description(s) bullet points
+        \item {App which can be used for taking notes and this app
+provides pdf of many resources helpful for studies.}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+\end{cventries}
+\cvsection{Skills}
+
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvskills}
+
+%---------------------------------------------------------
+  \cvskill
+    {Programming} % Category
+    {C/C++(Intermediate), Python(Intermediate), Java(Beginner)} % Skills
+
+%---------------------------------------------------------
+  \cvskill
+    {Software and Utilities} % Category
+    {Android Studio, Clion, Intellij Idea, Sublime Text} % Skills
+
+%---------------------------------------------------------
+  \cvskill
+    {Web Development} % Category
+    {HTML, CSS, NodeJs(Begineer)} % Skills
+
+%---------------------------------------------------------
+\end{cvskills}
+
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Achivements}
+
+
+%-------------------------------------------------------------------------------
+%	SUBSECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsubsection{CodeOlympia (2018)}
+
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvhonors}
+
+%---------------------------------------------------------
+  \cvhonor
+    {1st Prize} % Award
+    {A coding competition by MonsterIndia.com} % Event
+    {} % Location
+    {} % Date(s)
+%---------------------------------------------------------
+\end{cvhonors}
+
+
+%-------------------------------------------------------------------------------
+%	SUBSECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsubsection{Topcoder Collegiate Contest India (2018)}
+
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvhonors}
+
+%---------------------------------------------------------
+  \cvhonor
+    {In Top 30} % Award
+    {Secured a global rank of 36 and a Country rank of 28 in Topcoder Collegiate Contest} % Event
+    {} % Location
+    {} % Date(s)
+   \end{cvhonors}
+ 
+\cvsubsection{Competitive Coding}
+    \begin{cvhonors}
+    \cvhonor
+    {Codechef} % Award
+    {Highest Rating - 1974 (4 star), Handle - \href{<https://www.codechef.com/users/failed_coder>}{failed\_coder} } % Event
+    {} % Location
+    {} % Date(s)
+    \cvhonor
+    {Hackerrank} % Award
+    {Highest Rating - 2014, Handle - \href{<https://www.hackerrank.com/failed_coder>}{failed\_coder} } % Event
+    {} % Location
+    {} % Date(s)
+    \cvhonor
+    {Hackerearth} % Award
+    {Highest Rating - 1602, Handle - \href{<https://www.hackerearth.com/@divyanshverma12>}{divyanshverma12} } % Event
+    {} % Location
+    {} % Date(s)
+    \cvhonor
+    {Codeforces} % Award
+    {Highest Rating - 1536 (specialist), Handle - \href{<http://codeforces.com/profile/failed_coder>}{failed\_coder} } % Event
+    {} % Location
+    {} % Date(s)
+%---------------------------------------------------------
+\end{cvhonors}
+
+\cvsubsection{Others}
+\begin{cvhonors}
+
+%---------------------------------------------------------
+  \cvhonor
+    {IOITC} % Award
+    {Secured a global rank of 25 and a Country rank of 14 IOITC (Codechef Rated Contest)} % Event
+    {} % Location
+    {} % Date(s)
+
+%---------------------------------------------------------
+  \cvhonor
+    {Kode Kombact} % Award
+    {2nd in Coding Event during Engineer (NITK Techfest)} % Event
+    {} % Location
+    {} % Date(s)
+    \cvhonor
+    {CBSE CLUSTER} % Award
+    {Represented School in yearly sports(Table Tennis) contest CBSE Cluster} % Event
+    {} % Location
+    {} % Date(s)
+   \end{cvhonors}
+%-------------------------------------------------------------------------------
+\end{document}
